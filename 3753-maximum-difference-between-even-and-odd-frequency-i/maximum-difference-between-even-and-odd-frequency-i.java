@@ -14,6 +14,9 @@ class Solution {
                 oddf = Math.max(oddf,val);
             }
         }
+        if(evenf == Integer.MAX_VALUE){
+            evenf = 0;
+        }
         return oddf - evenf;
 
     }
