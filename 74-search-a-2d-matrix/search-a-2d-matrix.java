@@ -6,12 +6,15 @@ class Solution {
         while (left <= right) {
             int mid = left + (right - left) / 2;
             int mid_val = matrix[mid / n][mid % n];
-            if (mid_val == target)
+            if (mid_val == target){
                 return true;
-            else if (mid_val < target)
+            }
+            else if (mid_val < target){
                 left = mid + 1;
-            else
+            }
+            else{
                 right = mid - 1;
+            }
         }
         return false;
     }
